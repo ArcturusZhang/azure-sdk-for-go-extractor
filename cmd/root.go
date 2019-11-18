@@ -13,7 +13,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "extractor <go sdk service directory> <result path>",
-	Short: "",
+	Short: "This tool will extract all the enums in azure-sdk-for-go, and output them to a json file",
 	Long:  "",
 	Args:  cobra.ExactArgs(2),
 	RunE: func(cmd *cobra.Command, args []string) error {
